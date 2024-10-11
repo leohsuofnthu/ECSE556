@@ -1,0 +1,21 @@
+input_settings:
+    input_dir : "inputs"
+    dataset_dir: "PBMC"
+    datasets:
+        - name: "Dataset name"
+          exprData: "PBMC-CTL_First_3K_cells.csv"
+          trueEdges: "PBMC-CTL_Imposed_GRN.csv"
+    algorithms:
+        - name: "PIDC"
+          params:
+              should_run: [True] 
+        - name: "GENIE3"
+          params:
+              should_run: [True] 
+        - name: "GRNBOOST2"
+          params:
+              should_run: [True] 
+
+output_settings:
+    output_dir : "../"
+    output_prefix: "PBMC-CTL_"
